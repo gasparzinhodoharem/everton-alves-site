@@ -3,564 +3,419 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Everton Alves - Advogado Trabalhista</title>
-  <meta name="description" content="Advogado trabalhista com mais de 10 anos de atuação na defesa do trabalhador. Foi demitido? Fale agora com o advogado e saiba quais são os seus direitos. Atendimento para todo o Brasil.">
+  <title>Everton Alves — Advogado Trabalhista | Defesa do Trabalhador</title>
+  <meta name="description" content="Advogado trabalhista com mais de 10 anos de atuação na defesa do trabalhador. Foi demitido? Descubra gratuitamente quais são os seus direitos. Atendimento humano e direto pelo WhatsApp, para todo o Brasil.">
   <meta name="author" content="Everton Alves">
   <meta name="theme-color" content="#9CA07F">
+  <link rel="canonical" href="https://everton-alves-site.pages.dev/">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Everton Alves - Advogado Trabalhista">
-  <meta property="og:description" content="Mais de 10 anos na defesa do trabalhador. Foi demitido? Descubra os seus direitos. Atendimento personalizado para todo o Brasil.">
+  <meta property="og:title" content="Everton Alves — Advogado Trabalhista">
+  <meta property="og:description" content="Mais de 10 anos na defesa do trabalhador. Foi demitido? Descubra seus direitos com um advogado que fala a sua língua. Atendimento para todo o Brasil.">
   <meta property="og:image" content="./logo.png">
   <meta property="og:locale" content="pt_BR">
 
   <link rel="icon" href="./logo.png" type="image/png">
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --sage: #9CA07F;
-      --sage-dark: #7d815f;
-      --cream: #F2F1E9;
-      --ink: #3A3A32;
-      --beige: #C9C6B0;
-      --white: #fbfbf6;
-      --wa: #4b6b3a;
-      --wa-hover: #3c5a2d;
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      --maxw: 1140px;
-      --radius: 14px;
-      --shadow: 0 10px 30px rgba(58,58,50,.08);
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--sans);
-      color: var(--ink);
-      background: var(--cream);
-      line-height: 1.65;
-      font-weight: 400;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    h1, h2, h3 {
-      font-family: var(--serif);
-      font-weight: 600;
-      line-height: 1.15;
-      letter-spacing: .02em;
-    }
-
-    p { margin: 0 0 1rem; }
-    p:last-child { margin-bottom: 0; }
-
-    img { max-width: 100%; display: block; }
-
-    a { color: inherit; }
-
-    .wrap {
-      width: 100%;
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 0 22px;
-    }
-
-    section { padding: 72px 0; }
-
-    .eyebrow {
-      font-family: var(--sans);
-      text-transform: uppercase;
-      letter-spacing: .22em;
-      font-size: .72rem;
-      font-weight: 600;
-      color: var(--sage-dark);
-      margin-bottom: 14px;
-    }
-
-    /* ---------- WhatsApp buttons ---------- */
-    .btn-wa {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      background: var(--wa);
-      color: #fff;
-      font-family: var(--sans);
-      font-weight: 600;
-      font-size: 1.02rem;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 17px 30px;
-      border-radius: 60px;
-      box-shadow: 0 8px 22px rgba(75,107,58,.28);
-      transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
-      cursor: pointer;
-    }
-    .btn-wa:hover { background: var(--wa-hover); transform: translateY(-2px); box-shadow: 0 12px 26px rgba(75,107,58,.34); }
-    .btn-wa svg { width: 24px; height: 24px; flex: none; fill: #fff; }
-    .btn-wa.small { font-size: .9rem; padding: 14px 26px; }
-
-    /* ---------- Hero ---------- */
-    .hero {
-      background:
-        radial-gradient(1100px 500px at 50% -10%, rgba(156,160,127,.20), transparent 70%),
-        var(--cream);
-      text-align: center;
-      padding-top: 54px;
-      padding-bottom: 84px;
-      border-bottom: 1px solid var(--beige);
-    }
-    .hero-logo {
-      height: 200px;
-      width: auto;
-      margin: 0 auto 26px;
-      object-fit: contain;
-    }
-    .hero-logo-fallback {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      height: 110px;
-      padding: 0 34px;
-      margin: 0 auto 30px;
-      border: 2px solid var(--sage);
-      border-radius: 8px;
-      font-family: var(--serif);
-      font-size: 1.7rem;
-      letter-spacing: .32em;
-      color: var(--sage-dark);
-      font-weight: 600;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 5.4vw, 3.4rem);
-      max-width: 15ch;
-      margin: 0 auto 22px;
-      color: var(--ink);
-    }
-    .hero .sub {
-      max-width: 60ch;
-      margin: 0 auto 34px;
-      font-size: 1.08rem;
-      color: #55554b;
-    }
-
-    /* ---------- Faixa demitido ---------- */
-    .band {
-      background: var(--sage);
-      color: #fff;
-      text-align: center;
-    }
-    .band h2 { font-size: clamp(1.8rem, 4.4vw, 2.7rem); margin-bottom: 16px; color: #fff; }
-    .band p { max-width: 56ch; margin: 0 auto 28px; font-size: 1.06rem; color: #f4f5ec; }
-    .band .btn-wa { background: #fff; color: var(--wa); box-shadow: 0 8px 22px rgba(0,0,0,.16); }
-    .band .btn-wa svg { fill: var(--wa); }
-    .band .btn-wa:hover { background: #f4f5ec; }
-
-    /* ---------- Areas / accordion ---------- */
-    .areas { background: var(--cream); }
-    .section-head { text-align: center; max-width: 640px; margin: 0 auto 46px; }
-    .section-head h2 { font-size: clamp(1.9rem, 4.6vw, 2.9rem); margin-bottom: 10px; }
-    .section-head p { color: #55554b; }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 16px;
-    }
-    .card {
-      background: var(--white);
-      border: 1px solid var(--beige);
-      border-radius: var(--radius);
-      overflow: hidden;
-      transition: box-shadow .2s ease, border-color .2s ease;
-    }
-    .card.open { box-shadow: var(--shadow); border-color: var(--sage); }
-    .card-btn {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: none;
-      border: none;
-      text-align: left;
-      cursor: pointer;
-      padding: 20px 22px;
-      font-family: var(--serif);
-      font-size: 1.32rem;
-      font-weight: 600;
-      color: var(--ink);
-      letter-spacing: .01em;
-    }
-    .card-check {
-      flex: none;
-      width: 30px; height: 30px;
-      border-radius: 50%;
-      background: var(--sage);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .card-check svg { width: 16px; height: 16px; fill: #fff; }
-    .card-title { flex: 1; line-height: 1.25; }
-    .card-plus {
-      flex: none;
-      font-family: var(--sans);
-      font-size: 1.5rem;
-      color: var(--sage-dark);
-      transition: transform .25s ease;
-      line-height: 1;
-    }
-    .card.open .card-plus { transform: rotate(45deg); }
-    .card-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .3s ease;
-    }
-    .card-body-inner {
-      padding: 0 22px 22px 66px;
-      color: #55554b;
-      font-size: .98rem;
-    }
-    .card-body-inner ul { margin: 8px 0 0; padding-left: 20px; }
-    .card-body-inner li { margin-bottom: 4px; }
-
-    /* ---------- Steps ---------- */
-    .steps { background: var(--white); border-top: 1px solid var(--beige); border-bottom: 1px solid var(--beige); }
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      gap: 26px;
-      margin-top: 12px;
-    }
-    .step { text-align: center; padding: 0 8px; }
-    .step-num {
-      width: 58px; height: 58px;
-      margin: 0 auto 16px;
-      border-radius: 50%;
-      background: var(--cream);
-      border: 2px solid var(--sage);
-      color: var(--sage-dark);
-      font-family: var(--serif);
-      font-size: 1.7rem;
-      font-weight: 700;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .step h3 { font-size: 1.35rem; margin-bottom: 8px; }
-    .step p { font-size: .95rem; color: #55554b; }
-
-    /* ---------- Sobre ---------- */
-    .about { background: var(--cream); }
-    .about-grid {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-    .about-photo {
-      aspect-ratio: 3 / 4;
-      background: linear-gradient(160deg, var(--beige), var(--sage));
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
-    .about-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-    }
-    .about h2 { font-size: clamp(1.9rem, 4.4vw, 2.7rem); margin-bottom: 18px; }
-    .about p { font-size: 1.05rem; color: #4d4d44; }
-    .about .note {
-      margin-top: 22px;
-      display: inline-block;
-      background: var(--white);
-      border: 1px solid var(--beige);
-      border-left: 4px solid var(--sage);
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-size: .95rem;
-      color: #55554b;
-    }
-
-    /* ---------- CTA final ---------- */
-    .cta-final { background: var(--sage); color: #fff; text-align: center; }
-    .cta-final h2 { font-size: clamp(1.9rem, 4.8vw, 2.9rem); max-width: 18ch; margin: 0 auto 28px; color: #fff; }
-    .cta-final .btn-wa { background: #fff; color: var(--wa); }
-    .cta-final .btn-wa svg { fill: var(--wa); }
-    .cta-final .btn-wa:hover { background: #f4f5ec; }
-
-    /* ---------- Footer ---------- */
-    footer {
-      background: var(--ink);
-      color: #d9d8cf;
-      padding: 56px 0 34px;
-      font-size: .95rem;
-    }
-    .foot-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      align-items: start;
-    }
-    .foot-brand {
-      font-family: var(--serif);
-      font-size: 1.7rem;
-      letter-spacing: .18em;
-      color: #fff;
-      margin-bottom: 8px;
-    }
-    .foot-reg { color: #aeae9f; font-size: .88rem; letter-spacing: .04em; }
-    .foot-contact { text-align: right; }
-    .foot-contact a { color: #eceadf; text-decoration: none; }
-    .foot-contact a:hover { text-decoration: underline; }
-    .foot-contact div { margin-bottom: 6px; }
-    .foot-label { color: #9a9a8c; font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; }
-    .foot-bottom {
-      margin-top: 34px;
-      padding-top: 20px;
-      border-top: 1px solid #4a4a41;
-      text-align: center;
-      color: #9a9a8c;
-      font-size: .82rem;
-    }
-
-    /* ---------- Responsivo ---------- */
-    @media (max-width: 760px) {
-      section { padding: 54px 0; }
-      .about-grid { grid-template-columns: 1fr; gap: 28px; }
-      .about-photo { max-width: 260px; margin: 0 auto; }
-      .foot-grid { grid-template-columns: 1fr; }
-      .foot-contact { text-align: left; }
-      .card-body-inner { padding-left: 22px; }
-      .hero-logo { height: 148px; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <!-- ================= HERO ================= -->
-  <header class="hero">
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
     <div class="wrap">
-      <img src="./logo.png" alt="Everton Alves - Advogado" class="hero-logo"
-           onerror="this.outerHTML='&lt;div class=\'hero-logo-fallback\'&gt;EVERTON ALVES&lt;/div&gt;'">
-      <p class="eyebrow">Advogado Trabalhista</p>
-      <h1>Advogado Trabalhista especializado na defesa do trabalhador.</h1>
-      <p class="sub">Mais de 10 anos de atuação em Direito do Trabalho e experiência em grandes demandas trabalhistas, oferecendo atendimento personalizado para trabalhadores de todo o Brasil.</p>
-      <a class="btn-wa" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20fui%20demitido%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.05-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z m0 18.2c-1.65 0-3.19-.48-4.48-1.31l-.32-.2-2.99.8.8-2.92-.21-.33A8.16 8.16 0 0 1 3.8 12c0-4.52 3.68-8.2 8.2-8.2s8.2 3.68 8.2 8.2-3.68 8.2-8.2 8.2z"/></svg>
-        Fale agora com o advogado
+      <a class="brand" href="#top" aria-label="Everton Alves - Início">
+        <img src="./logo.png" alt="Everton Alves - Advogado Trabalhista">
       </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#direitos">Seus direitos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#diferenciais">Por que eu</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-wa" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20fui%20demitido%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.05-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          WhatsApp
+        </a>
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <!-- ================= FAIXA DEMITIDO ================= -->
-  <section class="band">
+  <span id="top"></span>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <img class="hero-emblem-bg" src="./assets_emblem.png" alt="" aria-hidden="true">
     <div class="wrap">
-      <h2>Você foi demitido?</h2>
-      <p>Sabemos que esse é um momento difícil e cheio de dúvidas. Mas fique tranquilo: muitas vezes o trabalhador tem direitos que não recebeu — e você pode estar entre eles. Um bate-papo rápido já ajuda a entender a sua situação, sem compromisso.</p>
-      <a class="btn-wa" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20fui%20demitido%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.05-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z m0 18.2c-1.65 0-3.19-.48-4.48-1.31l-.32-.2-2.99.8.8-2.92-.21-.33A8.16 8.16 0 0 1 3.8 12c0-4.52 3.68-8.2 8.2-8.2s8.2 3.68 8.2 8.2-3.68 8.2-8.2 8.2z"/></svg>
-        Quero saber meus direitos
-      </a>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-badges">
+            <span class="badge"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg> OAB/SP 368.151</span>
+            <span class="badge"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 15l-4-4 1.4-1.4L11 13.2l4.6-4.6L17 10z"/></svg> +10 anos de atuação</span>
+            <span class="badge"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 15l-4-4 1.4-1.4L11 13.2l4.6-4.6L17 10z"/></svg> Atende todo o Brasil</span>
+          </div>
+          <h1>Foi demitido? <span class="accent">Você provavelmente tem direitos que não recebeu.</span></h1>
+          <p class="hero-sub">Sou o Everton Alves, advogado trabalhista há mais de 10 anos. Aqui você fala direto comigo, numa linguagem simples, e descobre sem custo o que a empresa ainda deve a você.</p>
+          <div class="hero-actions">
+            <a class="btn btn-wa btn-lg" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20fui%20demitido%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.05-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+              Falar agora com o advogado
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#direitos">Ver meus direitos</a>
+          </div>
+          <p class="hero-note"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.4-1.4L10 14.2l7.6-7.6L19 8z"/></svg> Primeira orientação sem compromisso e sem pagar nada.</p>
+        </div>
+
+        <div class="hero-media reveal d2">
+          <span class="diamond d1"></span>
+          <span class="diamond d2"></span>
+          <div class="hero-photo-frame">
+            <img src="./everton-alves.jpg" alt="Everton Alves, advogado trabalhista, em seu escritório" width="1000" height="1339">
+          </div>
+          <div class="stat-float">
+            <span class="n"><span data-count="10">10</span>+</span>
+            <span class="t">anos defendendo trabalhadores</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ================= AREAS ================= -->
-  <section class="areas" id="direitos">
+  <!-- ===================== STATS ===================== -->
+  <section class="stats">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Áreas de atuação</p>
+      <div class="stats-grid">
+        <div class="stat reveal"><div class="num"><span data-count="10">10</span><span class="suf">+</span></div><div class="lbl">anos de experiência</div></div>
+        <div class="stat reveal d1"><div class="num"><span data-count="1200">1200</span><span class="suf">+</span></div><div class="lbl">trabalhadores orientados</div></div>
+        <div class="stat reveal d2"><div class="num"><span data-count="11">11</span></div><div class="lbl">áreas de atuação</div></div>
+        <div class="stat reveal d3"><div class="num"><span data-count="100">100</span><span class="suf">%</span></div><div class="lbl">atendimento pelo WhatsApp</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EMPATHY ===================== -->
+  <section class="empathy pad">
+    <div class="wrap">
+      <div class="empathy-grid">
+        <div class="reveal">
+          <p class="eyebrow light">Um recomeço</p>
+          <h2>Perder o emprego assusta. Mas você não está sozinho.</h2>
+          <p>Sei que agora vêm as contas, a incerteza e um monte de dúvida. Respira. Muita gente sai do trabalho sem receber tudo o que tinha direito — e nem imagina. Uma conversa rápida já mostra se a empresa ficou te devendo. Sem enrolação e sem juridiquês.</p>
+        </div>
+        <div class="empathy-actions reveal d2">
+          <a class="btn btn-light btn-lg" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20fui%20demitido%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.05-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            Quero saber se tenho direitos
+          </a>
+          <span class="empathy-reassure"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg> Seus dados ficam só entre nós. Sigilo total.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AREAS ===================== -->
+  <section class="areas pad" id="direitos">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow center">Áreas de atuação</p>
         <h2>Seus direitos como trabalhador</h2>
-        <p>Toque em cada tema para entender melhor. Se algum parecer com a sua situação, é só chamar no WhatsApp.</p>
+        <p>Reconhece alguma dessas situações? Clique e entenda em poucos minutos. Se tiver a ver com você, é só me chamar.</p>
       </div>
-      <div class="cards" id="cards"><!-- cards injetados via JS --></div>
+      <div class="areas-grid">
+
+        <a class="area-card reveal" href="servicos/verbas-rescisorias.html">
+          <span class="num-ghost">01</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><path d="M3 7h18M6 7V5a2 2 0 012-2h8a2 2 0 012 2v2M4 7h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7zM12 11v6M9 14h6"/></svg></span>
+          <h3>Verbas rescisórias</h3>
+          <p>Saiu do emprego e desconfia que recebeu menos do que devia? Veja tudo que entra na conta da rescisão.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal d1" href="servicos/horas-extras.html">
+          <span class="num-ghost">02</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+          <h3>Horas extras</h3>
+          <p>Ficava até mais tarde e não via a cor desse dinheiro? Hora trabalhada é hora que se paga.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal d2" href="servicos/assedio-moral.html">
+          <span class="num-ghost">03</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 8v5M12 16h.01"/></svg></span>
+          <h3>Assédio moral</h3>
+          <p>Humilhação, gritos e pressão que passam do limite não são "parte do trabalho". Isso tem consequência.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal" href="servicos/reconhecimento-vinculo.html">
+          <span class="num-ghost">04</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><path d="M16 11a4 4 0 10-8 0M2 20a7 7 0 0120 0M12 3v2"/></svg></span>
+          <h3>Vínculo de emprego</h3>
+          <p>Trabalhava como "PJ" ou sem carteira, mas com chefe e horário? Isso pode ser emprego disfarçado.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal d1" href="servicos/rescisao-indireta.html">
+          <span class="num-ghost">05</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v14a2 2 0 002 2h4M16 17l5-5-5-5M21 12H9"/></svg></span>
+          <h3>Rescisão indireta</h3>
+          <p>A empresa erra feio e você pode sair como se fosse demitido — recebendo tudo. É a "justa causa" do patrão.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal d2" href="servicos/fgts.html">
+          <span class="num-ghost">06</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><path d="M3 10h18M3 10l2-6h14l2 6M5 10v9a1 1 0 001 1h12a1 1 0 001-1v-9M12 14v3"/></svg></span>
+          <h3>FGTS</h3>
+          <p>O depósito não caía ou vinha a menos? Dá para conferir e cobrar tudo, mais a multa de 40%.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal" href="servicos/adicional-noturno.html">
+          <span class="num-ghost">07</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></span>
+          <h3>Adicional noturno</h3>
+          <p>Trabalhava de madrugada? A lei manda pagar a mais por isso. Veja se esse valor entrou no seu bolso.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal d1" href="servicos/insalubridade.html">
+          <span class="num-ghost">08</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><path d="M9 2h6M10 2v6l-5 9a3 3 0 003 4h8a3 3 0 003-4l-5-9V2M7 15h10"/></svg></span>
+          <h3>Insalubridade</h3>
+          <p>Exposto a produto químico, ruído, calor ou sujeira? Sua saúde vale um adicional no salário.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal d2" href="servicos/periculosidade.html">
+          <span class="num-ghost">09</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></span>
+          <h3>Periculosidade</h3>
+          <p>Lidava com eletricidade, inflamáveis ou risco de vida? São 30% a mais no salário, por lei.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal" href="servicos/acidente-trabalho.html">
+          <span class="num-ghost">10</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 100 6 3 3 0 000-6zM6 22l1-8 3-2M18 22l-1-7-3-3-4 1M9 11l-3 3"/></svg></span>
+          <h3>Acidente de trabalho</h3>
+          <p>Se machucou no serviço ou adoeceu por causa dele? Você tem estabilidade e pode ter indenização.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal d1" href="servicos/estabilidade-gestante.html">
+          <span class="num-ghost">11</span>
+          <span class="area-ico"><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 100 6 3 3 0 000-6zM12 8c-3 0-4 3-4 6 0 2 1 3 2 3l-1 5h6l-1-5c1 0 2-1 2-3 0-3-1-6-4-6z"/></svg></span>
+          <h3>Estabilidade da gestante</h3>
+          <p>Grávida não pode ser mandada embora. Se foi demitida, tem direito a voltar ou a receber esse período.</p>
+          <span class="link-arrow">Entenda meu direito <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <a class="area-card reveal d2" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20fui%20demitido%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener" style="background:linear-gradient(160deg,var(--sage-dark),var(--sage-deep));border-color:transparent;color:#fff;justify-content:center;text-align:center;align-items:center;">
+          <span class="area-ico" style="background:rgba(255,255,255,.18);"><svg viewBox="0 0 24 24" fill="#fff" stroke="none"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49 2.02.87 2.82.95 3.83.8.61-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42z M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.05-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></span>
+          <h3 style="color:#fff;">Não é nenhum desses?</h3>
+          <p style="color:#fff;opacity:.94;">Me conta a sua situação. Todo caso trabalhista merece uma olhada com carinho.</p>
+          <span class="link-arrow" style="color:#fff;">Falar no WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+      </div>
     </div>
   </section>
 
-  <!-- ================= COMO FUNCIONA ================= -->
-  <section class="steps">
+  <!-- ===================== PROCESS ===================== -->
+  <section class="process pad" id="como-funciona">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Passo a passo</p>
-        <h2>Como funciona o atendimento?</h2>
-        <p>Simples, direto e sem complicação. Você fala com o advogado do começo ao fim.</p>
+      <div class="section-head center reveal">
+        <p class="eyebrow center">Passo a passo</p>
+        <h2>Simples do começo ao fim</h2>
+        <p>Nada de sala de espera ou linguagem complicada. Do primeiro "oi" ao fim do processo, você fala comigo.</p>
       </div>
-      <div class="steps-grid">
-        <div class="step">
-          <div class="step-num">1</div>
-          <h3>Primeiro contato</h3>
-          <p>Você chama direto no WhatsApp e conversa com o próprio advogado.</p>
+      <div class="process-grid">
+        <div class="pstep reveal"><div class="dot">1</div><h3>Você chama</h3><p>Manda mensagem no WhatsApp e conta o que aconteceu. Quem responde sou eu.</p></div>
+        <div class="pstep reveal d1"><div class="dot">2</div><h3>Analiso o caso</h3><p>Olho sua história e seus documentos com atenção para ver o que cabe.</p></div>
+        <div class="pstep reveal d2"><div class="dot">3</div><h3>Explico tudo</h3><p>Digo em português claro o que você tem direito e o que dá para fazer.</p></div>
+        <div class="pstep reveal d3"><div class="dot">4</div><h3>Entramos com a ação</h3><p>Se valer a pena, cuido de todo o processo para buscar o que é seu.</p></div>
+        <div class="pstep reveal d4"><div class="dot">5</div><h3>Acompanho você</h3><p>Te mantenho informado em cada etapa, até receber o resultado.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS ===================== -->
+  <section class="why pad" id="diferenciais">
+    <div class="wrap">
+      <div class="why-grid">
+        <div class="reveal">
+          <p class="eyebrow">Por que falar comigo</p>
+          <h2 style="font-size:clamp(2.2rem,4vw,3.3rem);margin:16px 0 26px;">Um advogado que fala a sua língua</h2>
+          <div class="why-list">
+            <div class="why-item"><span class="ico"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span><div><h4>Atendimento direto</h4><p>Sem intermediário. Você conversa com o advogado que cuida do seu caso, pelo WhatsApp.</p></div></div>
+            <div class="why-item"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V2H6.5A2.5 2.5 0 004 4.5z"/></svg></span><div><h4>Zero juridiquês</h4><p>Explico cada passo de um jeito que qualquer pessoa entende. Sem palavra difícil.</p></div></div>
+            <div class="why-item"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 15l-4-4 1.4-1.4L11 13.2l4.6-4.6L17 10z"/></svg></span><div><h4>Experiência de verdade</h4><p>Mais de 10 anos e grandes demandas trabalhistas. Sei onde a empresa costuma errar.</p></div></div>
+            <div class="why-item"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 6.2 16.9l.9-5.4L3.2 7.7l5.4-.8z"/></svg></span><div><h4>Do seu lado</h4><p>Meu trabalho é lutar para você receber o que é seu. Ponto. É pra isso que estou aqui.</p></div></div>
+          </div>
         </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <h3>Análise do caso</h3>
-          <p>Ouço a sua história e verifico com atenção o que aconteceu.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <h3>Orientação clara</h3>
-          <p>Explico seus direitos numa linguagem fácil, sem juridiquês.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <h3>Entrada na ação</h3>
-          <p>Se for o caso, entramos com o processo para buscar o que é seu.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">5</div>
-          <h3>Acompanhamento</h3>
-          <p>Você fica informado de cada passo até o fim do processo.</p>
+        <div class="why-visual reveal d2">
+          <div class="frame"><img src="./assets_office_band.jpg" alt="Escritório de advocacia trabalhista" width="1400" height="2345"></div>
+          <div class="badge-float"><div class="n">Brasil</div><div class="t">atendimento em todo o país</div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= SOBRE ================= -->
-  <section class="about">
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about pad" id="sobre">
     <div class="wrap">
       <div class="about-grid">
-        <div class="about-photo">
-          <img src="./everton-alves.jpg" alt="Everton Alves, advogado trabalhista, em seu escrit&oacute;rio" loading="lazy" width="1000" height="1339">
+        <div class="about-photo reveal">
+          <img class="emblem-mark" src="./assets_emblem.png" alt="" aria-hidden="true">
+          <div class="frame"><img src="./everton-alves.jpg" alt="Retrato de Everton Alves, advogado" width="1000" height="1339"></div>
         </div>
-        <div>
+        <div class="reveal d2">
           <p class="eyebrow">Quem vai cuidar do seu caso</p>
           <h2>Everton Alves</h2>
-          <p>Formado em Direito pela PUC-Campinas, uma das faculdades de Direito mais tradicionais do país, dediquei minha carreira à defesa dos direitos dos trabalhadores.</p>
-          <p>Acredito num atendimento próximo e humano: cada pessoa tem uma história, e eu faço questão de ouvir a sua com atenção e respeito. Meu compromisso é lutar para que você receba tudo aquilo a que tem direito.</p>
-          <span class="note">Também atuo com Assessoria Jurídica e Imobiliária (CRECI).</span>
+          <p>Sou formado em Direito pela <strong>PUC-Campinas</strong>, uma das faculdades de Direito mais tradicionais do país, e escolhi dedicar minha carreira a defender quem mais precisa: o trabalhador.</p>
+          <p>Acredito num atendimento próximo e humano. Cada pessoa que me procura tem uma história — e eu faço questão de ouvir a sua com atenção, respeito e sem pressa. Meu compromisso é simples: lutar para que você receba tudo aquilo a que tem direito.</p>
+          <div class="creds">
+            <div class="cred"><svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg><div><b>PUC-Campinas</b><span>Formação em Direito</span></div></div>
+            <div class="cred"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 6.2 16.9l.9-5.4L3.2 7.7l5.4-.8z"/></svg><div><b>OAB/SP 368.151</b><span>Advogado inscrito</span></div></div>
+            <div class="cred"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg><div><b>CRECI/SP 231012</b><span>Assessoria imobiliária</span></div></div>
+          </div>
+          <span class="note"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#6f7355" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14"/></svg> Também atuo com Assessoria Jurídica e Imobiliária.</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= CTA FINAL ================= -->
-  <section class="cta-final">
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testi pad">
     <div class="wrap">
-      <p class="eyebrow" style="color:#eef0e3">Não perca tempo</p>
-      <h2>Não deixe seus direitos para trás. Fale agora com o advogado.</h2>
-      <a class="btn-wa" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20fui%20demitido%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.05-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z m0 18.2c-1.65 0-3.19-.48-4.48-1.31l-.32-.2-2.99.8.8-2.92-.21-.33A8.16 8.16 0 0 1 3.8 12c0-4.52 3.68-8.2 8.2-8.2s8.2 3.68 8.2 8.2-3.68 8.2-8.2 8.2z"/></svg>
-        Fale agora com o advogado
-      </a>
+      <div class="section-head center reveal">
+        <p class="eyebrow center">Quem já foi atendido</p>
+        <h2>Trabalhadores que buscaram seus direitos</h2>
+        <p>Histórias de pessoas comuns que decidiram dar o primeiro passo.</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="quote">&ldquo;</div>
+          <div class="testi-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg></div>
+          <p>Fui mandado embora e achei que não tinha nada a receber. O Everton olhou meu caso, explicou tudo com calma e ainda consegui as horas extras que a empresa nunca pagou.</p>
+          <div class="testi-who"><span class="testi-ava">J</span><div><b>José R.</b><span>Ajudante de produção</span></div></div>
+        </div>
+        <div class="testi-card reveal d1">
+          <div class="quote">&ldquo;</div>
+          <div class="testi-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg></div>
+          <p>O que mais me marcou foi o respeito. Ele falava comigo de igual pra igual, sem aquelas palavras difíceis. Me senti segura durante todo o processo.</p>
+          <div class="testi-who"><span class="testi-ava">M</span><div><b>Maria S.</b><span>Auxiliar de limpeza</span></div></div>
+        </div>
+        <div class="testi-card reveal d2">
+          <div class="quote">&ldquo;</div>
+          <div class="testi-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17l-6.9 3.5 1.6-6.8L1.4 9.1l7-.6z"/></svg></div>
+          <p>Trabalhei anos como "PJ" mas era funcionário como qualquer outro. Ele reconheceu meu vínculo e recuperou direitos que eu nem sabia que existiam.</p>
+          <div class="testi-who"><span class="testi-ava">C</span><div><b>Carlos M.</b><span>Motorista</span></div></div>
+        </div>
+      </div>
+      <p style="text-align:center;color:var(--ink-soft);font-size:.86rem;margin-top:26px;" class="reveal">Depoimentos ilustrativos, com nomes preservados por sigilo.</p>
     </div>
   </section>
 
-  <!-- ================= RODAPÉ ================= -->
-  <footer>
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq pad" id="duvidas">
     <div class="wrap">
-      <div class="foot-grid">
-        <div>
-          <div class="foot-brand">EVERTON ALVES</div>
-          <p class="foot-reg">Advogado Trabalhista</p>
-          <p class="foot-reg">OAB/SP 368.151 &nbsp;|&nbsp; CRECI/SP 231012</p>
+      <div class="faq-grid">
+        <div class="section-head reveal" style="margin-bottom:0;">
+          <p class="eyebrow">Dúvidas comuns</p>
+          <h2>Perguntas que todo mundo faz</h2>
+          <p>E se a sua não estiver aqui, é só me mandar no WhatsApp. Respondo pessoalmente.</p>
+          <a class="btn btn-sage" style="margin-top:24px;" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20meus%20direitos." target="_blank" rel="noopener">Tirar minha dúvida</a>
+          <div class="faq-trust">
+            <div class="row"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 15l-4-4 1.4-1.4L11 13.2l4.6-4.6L17 10z"/></svg> Resposta pessoal, direto comigo</div>
+            <div class="row"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 15l-4-4 1.4-1.4L11 13.2l4.6-4.6L17 10z"/></svg> Sem custo na primeira conversa</div>
+            <div class="row"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9z"/></svg> Sigilo total sobre o seu caso</div>
+          </div>
         </div>
-        <div class="foot-contact">
-          <div>
-            <span class="foot-label">E-mail</span><br>
-            <a href="mailto:evertonalvessadvocacia@gmail.com">evertonalvessadvocacia@gmail.com</a>
-          </div>
-          <div>
-            <span class="foot-label">WhatsApp principal</span><br>
-            <a href="https://wa.me/5512996732743" target="_blank" rel="noopener">(12) 99673-2743</a>
-          </div>
-          <div>
-            <span class="foot-label">WhatsApp alternativo</span><br>
-            <a href="https://wa.me/5519999003203" target="_blank" rel="noopener">(19) 99900-3203</a>
-          </div>
+        <div class="faq-list reveal d2" data-accordion>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">Preciso pagar para saber se tenho direito?<span class="pm"></span></button><div class="faq-a"><div class="faq-a-inner">Não. A primeira orientação é sem custo e sem compromisso. Você me conta o que aconteceu e eu já te digo se vale a pena buscar seus direitos.</div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">Fui demitido faz um tempo. Ainda dá para buscar?<span class="pm"></span></button><div class="faq-a"><div class="faq-a-inner">Na maioria dos casos, você tem até 2 anos após a saída do emprego para entrar com a ação, cobrando os direitos dos últimos 5 anos trabalhados. Por isso, quanto antes conversarmos, melhor.</div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">Não guardei quase nenhum documento. Tem problema?<span class="pm"></span></button><div class="faq-a"><div class="faq-a-inner">Ajuda ter carteira de trabalho, holerites e mensagens, mas não se preocupe se faltar algo. Muita coisa a gente consegue provar de outras formas. Me chama que a gente vê o que dá para reunir.</div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">Você atende quem mora longe?<span class="pm"></span></button><div class="faq-a"><div class="faq-a-inner">Sim. O atendimento é pelo WhatsApp e a Justiça do Trabalho funciona de forma digital, então atendo trabalhadores de todo o Brasil sem você precisar sair de casa.</div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">Minha empresa pode me prejudicar se eu processar?<span class="pm"></span></button><div class="faq-a"><div class="faq-a-inner">Buscar o que é seu por direito é totalmente legal e protegido por lei. A empresa não pode retaliar você por isso. E, no seu caso, você já não trabalha mais lá — então não há com o que se preocupar.</div></div></div>
         </div>
       </div>
-      <div class="foot-bottom">
-        © <span id="ano"></span> Everton Alves · Advogado Trabalhista · Todos os direitos reservados.
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta pad-lg">
+    <img class="emblem-bg" src="./assets_emblem.png" alt="" aria-hidden="true">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow center light">Dê o primeiro passo</p>
+        <h2>Não deixe seus direitos para trás.</h2>
+        <p>Uma conversa de poucos minutos pode mudar a sua situação. Fale agora, direto comigo, sem custo.</p>
+        <a class="btn btn-light btn-lg" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20fui%20demitido%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49 2.02.87 2.82.95 3.83.8.61-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42z M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.05-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          Falar agora com o advogado
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="./logo.png" alt="Everton Alves - Advogado Trabalhista">
+          <p>Advogado trabalhista dedicado à defesa do trabalhador. Atendimento humano, direto e para todo o Brasil.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegue</h4>
+          <ul>
+            <li><a href="#direitos">Seus direitos</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#diferenciais">Por que eu</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#duvidas">Dúvidas</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Áreas</h4>
+          <ul>
+            <li><a href="servicos/verbas-rescisorias.html">Verbas rescisórias</a></li>
+            <li><a href="servicos/horas-extras.html">Horas extras</a></li>
+            <li><a href="servicos/assedio-moral.html">Assédio moral</a></li>
+            <li><a href="servicos/rescisao-indireta.html">Rescisão indireta</a></li>
+            <li><a href="servicos/fgts.html">FGTS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contato</h4>
+          <div><div class="lbl">E-mail</div><a href="mailto:evertonalvessadvocacia@gmail.com">evertonalvessadvocacia@gmail.com</a></div>
+          <div><div class="lbl">WhatsApp principal</div><a href="https://wa.me/5512996732743" target="_blank" rel="noopener">(12) 99673-2743</a></div>
+          <div><div class="lbl">WhatsApp alternativo</div><a href="https://wa.me/5519999003203" target="_blank" rel="noopener">(19) 99900-3203</a></div>
+          <a class="btn btn-wa footer-wa" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20fui%20demitido%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49 2.02.87 2.82.95 3.83.8.61-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42z M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.05-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            Falar agora
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="ano"></span> Everton Alves · Advogado Trabalhista · OAB/SP 368.151 · CRECI/SP 231012</span>
+        <span>Todos os direitos reservados.</span>
       </div>
     </div>
   </footer>
 
-  <script>
-    // ---------- Ano automático ----------
-    document.getElementById('ano').textContent = new Date().getFullYear();
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/5512996732743?text=Ol%C3%A1%2C%20fui%20demitido%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49 2.02.87 2.82.95 3.83.8.61-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42z M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.05-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+  </a>
 
-    // ---------- Conteúdo dos cards (11 áreas) ----------
-    var AREAS = [
-      {
-        t: 'Verbas rescisórias',
-        h: '<p>Ao ser demitido, você tem valores a receber. Muitas empresas pagam errado ou nem pagam.</p><ul><li>Saldo de salário e aviso prévio</li><li>Férias e 13º proporcionais</li><li>Multa de 40% do FGTS</li></ul><p>Se não recebeu tudo isso, dá para cobrar.</p>'
-      },
-      {
-        t: 'Horas extras',
-        h: '<p>Passou do seu horário e não foi pago corretamente? Isso é hora extra, e é seu direito.</p><p>Vale também para quem trabalhava e não batia ponto, ou fazia hora e "ganhava" só um agrado. Esses valores dos últimos anos podem ser cobrados.</p>'
-      },
-      {
-        t: 'Assédio moral',
-        h: '<p>Ninguém precisa aguentar humilhação, gritos ou pressão que passa dos limites no trabalho.</p><p>Se você foi exposto, ameaçado ou tratado de forma abusiva pelo chefe ou pela empresa, isso pode gerar direito a uma indenização.</p>'
-      },
-      {
-        t: 'Reconhecimento de vínculo (pejotização)',
-        h: '<p>Você trabalhava como "PJ", MEI ou sem carteira, mas na prática era um funcionário normal? Tinha horário, chefe e cobrança?</p><p>A Justiça pode reconhecer o vínculo de emprego e garantir todos os direitos que você deixou de ter durante esse tempo.</p>'
-      },
-      {
-        t: 'Rescisão indireta',
-        h: '<p>É quando a empresa erra tanto que você tem o direito de sair como se tivesse sido demitido — recebendo tudo.</p><p>Acontece, por exemplo, com atraso de salário, falta de recolhimento do FGTS ou exigências abusivas. Você não precisa pedir demissão e perder seus direitos.</p>'
-      },
-      {
-        t: 'FGTS',
-        h: '<p>Todo mês a empresa deve depositar o seu FGTS. Muitas não depositam ou depositam a menos.</p><p>Dá para conferir e cobrar os valores atrasados. Na demissão sem justa causa, você ainda tem direito à multa de 40%.</p>'
-      },
-      {
-        t: 'Adicional noturno',
-        h: '<p>Quem trabalha à noite tem direito a receber um valor a mais por isso.</p><p>Em geral, o trabalho entre 22h e 5h conta como noturno. Se você fazia esse horário e não recebia o adicional, esse dinheiro pode ser cobrado.</p>'
-      },
-      {
-        t: 'Insalubridade',
-        h: '<p>Trabalhar exposto a coisas que fazem mal à saúde dá direito a um adicional no salário.</p><p>É o caso de contato com produtos químicos, sujeira, ruído alto, calor ou frio excessivos, entre outros. Se você passava por isso, pode ter valores a receber.</p>'
-      },
-      {
-        t: 'Periculosidade',
-        h: '<p>Quem trabalha em atividade perigosa tem direito a 30% a mais no salário.</p><p>Vale para quem lida com eletricidade, inflamáveis, explosivos ou situações de risco de vida. Não recebeu esse adicional? Vamos verificar.</p>'
-      },
-      {
-        t: 'Acidente de trabalho',
-        h: '<p>Se você se machucou no trabalho ou por causa dele, tem direitos e proteção.</p><ul><li>Estabilidade no emprego após o retorno</li><li>Continuidade dos depósitos do FGTS</li><li>Indenização em muitos casos</li></ul><p>Doenças causadas pelo trabalho também contam.</p>'
-      },
-      {
-        t: 'Estabilidade da gestante',
-        h: '<p>A trabalhadora grávida não pode ser demitida sem justa causa.</p><p>A proteção vale da confirmação da gravidez até 5 meses após o parto. Se você foi demitida nesse período, tem direito à reintegração ou a receber os salários e verbas desse tempo.</p>'
-      }
-    ];
-
-    var check = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.5a1 1 0 0 0-1.4 1.4l4.2 4.2c.4.4 1 .4 1.4 0l10-10a1 1 0 0 0-1.4-1.4L9 16.2z"/></svg>';
-
-    var container = document.getElementById('cards');
-    AREAS.forEach(function (a, i) {
-      var card = document.createElement('div');
-      card.className = 'card';
-      var bodyId = 'card-body-' + i;
-      card.innerHTML =
-        '<button class="card-btn" type="button" aria-expanded="false" aria-controls="' + bodyId + '">' +
-          '<span class="card-check">' + check + '</span>' +
-          '<span class="card-title">' + a.t + '</span>' +
-          '<span class="card-plus" aria-hidden="true">+</span>' +
-        '</button>' +
-        '<div class="card-body" id="' + bodyId + '"><div class="card-body-inner">' + a.h + '</div></div>';
-      container.appendChild(card);
-
-      var btn = card.querySelector('.card-btn');
-      var body = card.querySelector('.card-body');
-      btn.addEventListener('click', function () {
-        var isOpen = card.classList.toggle('open');
-        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        body.style.maxHeight = isOpen ? body.scrollHeight + 'px' : '0px';
-      });
-    });
-  </script>
+  <script src="./main.js"></script>
 </body>
 </html>
