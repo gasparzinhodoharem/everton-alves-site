@@ -119,9 +119,9 @@
       border-bottom: 1px solid var(--beige);
     }
     .hero-logo {
-      height: 132px;
+      height: 200px;
       width: auto;
-      margin: 0 auto 30px;
+      margin: 0 auto 26px;
       object-fit: contain;
     }
     .hero-logo-fallback {
@@ -268,16 +268,15 @@
       aspect-ratio: 3 / 4;
       background: linear-gradient(160deg, var(--beige), var(--sage));
       border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      font-family: var(--serif);
-      font-size: 1.15rem;
-      letter-spacing: .1em;
+      overflow: hidden;
       box-shadow: var(--shadow);
-      padding: 20px;
+    }
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
     }
     .about h2 { font-size: clamp(1.9rem, 4.4vw, 2.7rem); margin-bottom: 18px; }
     .about p { font-size: 1.05rem; color: #4d4d44; }
@@ -343,7 +342,7 @@
       .foot-grid { grid-template-columns: 1fr; }
       .foot-contact { text-align: left; }
       .card-body-inner { padding-left: 22px; }
-      .hero-logo { height: 104px; }
+      .hero-logo { height: 148px; }
     }
   </style>
 </head>
@@ -430,7 +429,9 @@
   <section class="about">
     <div class="wrap">
       <div class="about-grid">
-        <div class="about-photo">Foto do advogado</div>
+        <div class="about-photo">
+          <img src="./everton-alves.jpg" alt="Everton Alves, advogado trabalhista, em seu escrit&oacute;rio" loading="lazy" width="1000" height="1339">
+        </div>
         <div>
           <p class="eyebrow">Quem vai cuidar do seu caso</p>
           <h2>Everton Alves</h2>
