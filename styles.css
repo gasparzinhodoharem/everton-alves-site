@@ -236,11 +236,14 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate
 /* ============================================================
    EMPATHY BAND ("Você foi demitido?")
    ============================================================ */
-.empathy { background: var(--sage); color: #fff; overflow: hidden; }
+.empathy { background: var(--sage-deep); color: #fff; overflow: hidden; }
 .empathy::before {
   content: ""; position: absolute; inset: 0; z-index: 0;
-  background: url('assets_office_band.jpg') right center / cover no-repeat;
-  opacity: .16; mix-blend-mode: luminosity;
+  background: url('assets_recomeco.jpg') center 42% / cover no-repeat;
+}
+.empathy::after {
+  content: ""; position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(90deg, rgba(70,74,54,.88) 0%, rgba(86,90,65,.76) 48%, rgba(111,115,85,.55) 100%);
 }
 .empathy .wrap { position: relative; z-index: 1; }
 .empathy-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: end; }
