@@ -83,6 +83,36 @@
     });
   });
 
+  /* ---------- "Por que eu" 4-image slideshow (synced with items) ---------- */
+  var whySlider = document.getElementById('whySlider');
+  if (whySlider) {
+    var slides = whySlider.querySelectorAll('.why-slide');
+    var dots = whySlider.querySelectorAll('.wd');
+    var items = document.querySelectorAll('.why-list .why-item');
+    var wi = 0, wtimer = null;
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function whyGo(n) {
+      wi = (n + slides.length) % slides.length;
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].classList.toggle('is-active', i === wi);
+        if (dots[i]) dots[i].classList.toggle('is-active', i === wi);
+        if (items[i]) items[i].classList.toggle('active', i === wi);
+      }
+    }
+    function whyStart() { if (!reduce) { whyStop(); wtimer = setInterval(function () { whyGo(wi + 1); }, 3600); } }
+    function whyStop() { if (wtimer) { clearInterval(wtimer); wtimer = null; } }
+    dots.forEach(function (d, i) { d.addEventListener('click', function () { whyGo(i); whyStart(); }); });
+    items.forEach(function (it, i) { it.addEventListener('mouseenter', function () { whyGo(i); whyStop(); }); });
+    var whyVisual = document.querySelector('.why-visual');
+    if (whyVisual) {
+      whyVisual.addEventListener('mouseenter', whyStop);
+      whyVisual.addEventListener('mouseleave', whyStart);
+    }
+    var whyList = document.querySelector('.why-list');
+    if (whyList) whyList.addEventListener('mouseleave', whyStart);
+    whyGo(0); whyStart();
+  }
+
   /* ---------- Contact form -> WhatsApp ---------- */
   var waForm = document.getElementById('waForm');
   if (waForm) {
