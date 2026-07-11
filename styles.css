@@ -239,15 +239,26 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate
     margin-left: auto;
   }
 }
-/* Telas desktop baixas: comprime o texto do hero para caber tudo na janela */
-@media (min-width: 1081px) and (max-height: 800px) {
-  .hero { padding-top: calc(var(--header-h) + 4px); padding-bottom: 18px; }
-  .hero-badges { margin-bottom: 15px; }
-  .hero h1 { font-size: clamp(2.3rem, 3.4vw, 3.4rem); margin-bottom: 15px; }
-  .hero h1 .accent { margin-top: .14em; }
-  .hero-sub { font-size: 1.06rem; margin-bottom: 20px; }
-  .hero-note { margin-top: 14px; }
-  .hero-photo-frame { max-height: calc(100dvh - var(--header-h) - 36px); }
+/* Telas desktop de altura media (~768 a 820px): compressao leve, mantendo
+   as fontes praticamente no tamanho normal, so ajustando espacamentos. */
+@media (min-width: 1081px) and (max-height: 820px) {
+  .hero { padding-top: calc(var(--header-h) + 6px); padding-bottom: 22px; }
+  .hero-badges { margin-bottom: 18px; }
+  .hero h1 { font-size: clamp(2.55rem, 4.3vw, 4rem); margin-bottom: 18px; }
+  .hero-sub { font-size: 1.14rem; margin-bottom: 24px; }
+  .hero-note { margin-top: 16px; }
+  .hero-photo-frame { max-height: calc(100dvh - var(--header-h) - 44px); }
+}
+/* Telas desktop realmente baixas (<=730px): compressao mais forte para
+   caber tudo sem estourar a janela. */
+@media (min-width: 1081px) and (max-height: 730px) {
+  .hero { padding-top: calc(var(--header-h) + 2px); padding-bottom: 16px; }
+  .hero-badges { margin-bottom: 13px; }
+  .hero h1 { font-size: clamp(2.25rem, 3.4vw, 3.3rem); margin-bottom: 13px; }
+  .hero h1 .accent { margin-top: .12em; }
+  .hero-sub { font-size: 1.04rem; margin-bottom: 18px; }
+  .hero-note { margin-top: 12px; }
+  .hero-photo-frame { max-height: calc(100dvh - var(--header-h) - 32px); }
 }
 
 /* ============================================================
