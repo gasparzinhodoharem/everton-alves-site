@@ -860,6 +860,21 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate
   .stat-float { padding: 14px 18px; }
   .stat-float .n { font-size: 2rem; }
   .areas-grid, .testi-grid, .related-grid, .blog-grid { grid-template-columns: 1fr; }
+  /* Passo a passo: 1 item por linha, dot a esquerda e linha pontilhada vertical */
+  .process-grid { grid-template-columns: 1fr; gap: 0; }
+  .pstep {
+    display: grid; grid-template-columns: 70px 1fr; column-gap: 20px; align-items: start;
+    text-align: left; padding-bottom: 30px;
+  }
+  .pstep:last-child { padding-bottom: 0; }
+  .pstep .dot { grid-row: 1 / 3; align-self: start; margin: 0; }
+  .pstep h3 { grid-column: 2; align-self: center; margin-bottom: 4px; }
+  .pstep p { grid-column: 2; }
+  .pstep::before {
+    content: ""; position: absolute; left: 34px; top: 35px; bottom: -35px; width: 2px; z-index: 0;
+    background: repeating-linear-gradient(180deg, var(--beige) 0 10px, transparent 10px 20px);
+  }
+  .pstep:last-child::before { display: none; }
   .contact-form .row2 { grid-template-columns: 1fr; gap: 0; }
   .contact-form .row2 .field { margin-bottom: 18px; }
   .contact-form { padding: 28px 22px; }
