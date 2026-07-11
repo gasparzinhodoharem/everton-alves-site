@@ -240,7 +240,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate
   }
 }
 /* Telas desktop baixas: comprime o texto do hero para caber tudo na janela */
-@media (min-width: 1081px) and (max-height: 760px) {
+@media (min-width: 1081px) and (max-height: 800px) {
   .hero { padding-top: calc(var(--header-h) + 4px); padding-bottom: 18px; }
   .hero-badges { margin-bottom: 15px; }
   .hero h1 { font-size: clamp(2.3rem, 3.4vw, 3.4rem); margin-bottom: 15px; }
