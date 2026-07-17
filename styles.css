@@ -240,10 +240,10 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate
 .hero-badge { display: none; }
 @media (min-width: 1081px) {
   .hero-badge {
-    display: inline-flex; align-items: center; position: absolute; top: 28px; left: 50%;
-    transform: translateX(-50%); z-index: 5; background: var(--paper); color: var(--sage-dark);
-    border: 1px solid var(--beige-line); border-radius: 999px; padding: 10px 22px;
-    font-size: .85rem; font-weight: 600; letter-spacing: .02em; box-shadow: var(--shadow);
+    display: inline-flex; align-items: center; position: absolute; top: 24px; left: 50%;
+    transform: translateX(-50%); z-index: 5; background: var(--sage-dark); color: #fff;
+    border: none; border-radius: 999px; padding: 16px 34px;
+    font-size: 1.15rem; font-weight: 700; letter-spacing: .01em; box-shadow: 0 14px 30px rgba(0,0,0,.28);
     animation: hero-badge-float 3.5s ease-in-out infinite;
   }
 }
