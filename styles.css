@@ -904,6 +904,10 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate
   .contact-form { padding: 28px 22px; }
   .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 20px 10px; }
   .empathy .btn-light, .hero-actions .btn { align-self: stretch; }
+  .cta .btn-lg {
+    padding: 14px 16px; font-size: clamp(.72rem, 3.6vw, .92rem); gap: 8px; white-space: nowrap;
+  }
+  .cta .btn-lg svg { width: 18px; height: 18px; flex: none; }
   .why-visual .badge-float { right: 0; }
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
   .footer-bottom { flex-direction: column; }
