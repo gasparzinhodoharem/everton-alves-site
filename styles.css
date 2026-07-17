@@ -875,6 +875,10 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate
   .hero { padding-top: calc(var(--header-h) + 30px); }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { width: 100%; }
+  .hero-actions .btn-lg {
+    padding: 14px 16px; font-size: clamp(.72rem, 3.6vw, .92rem); gap: 8px; white-space: nowrap;
+  }
+  .hero-actions .btn-lg svg { width: 18px; height: 18px; flex: none; }
   .hero-photo-frame { border-radius: 140px 140px var(--radius) var(--radius); }
   .stat-float { padding: 14px 18px; }
   .stat-float .n { font-size: 2rem; }
